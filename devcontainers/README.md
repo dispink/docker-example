@@ -151,3 +151,6 @@ P.S. Here we don't need to install the commonly used packages (ssh sudo vim htop
 git python pip), setup ssh for the container, and bind the container's folder to
 the operation system's folder beacuese they are all dealt with by 
 `Dev Container` in default.
+
+# Connect to Github
+Git is automatically installed in the container. The connection (pull and push) to Github is able to be setup via the [offical guide](https://code.visualstudio.com/remote/advancedcontainers/sharing-git-credentials). But, somehow it doesn't work for me. The connection betweem the container and the host machine (lys306-gpu in my case) is not successfully establish to share the git credentials. Therefore, I initiate a new ssh key in the container and add it to Github. The details are in [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
